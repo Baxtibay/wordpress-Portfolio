@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  max-width: 1148px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-content {
+  flex-grow: 1;
+}

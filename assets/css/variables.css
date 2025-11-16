@@ -1,0 +1,11 @@
+:root {
+  --green: #5fb4a2;
+  --dark-blue: #203a4c;
+  --gray-blue: #33323d;
+  --light-grey: #fafafa;
+  --grey: #eaeaeb;
+  --red: #f43030;
+
+  --accent-font-family: 'Poppins', 'Times New Roman', serif;
+  --body-font-family: 'Public Sans', 'Arial', sans-serif;
+}

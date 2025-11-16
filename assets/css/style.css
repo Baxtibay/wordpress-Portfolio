@@ -1,0 +1,15 @@
+/*
+Theme Name: My Portfolio
+Theme URI: https://mysite.com
+Author: John Doe
+Text Domain: portfolio
+Version: 1.0
+*/
+
+@import url('./base.css');
+@import url('./header.css');
+@import url('./layout.css');
+@import url('./normalize.css');
+@import url('./variables.css');
+
+@import url('./components/buttons.css');
