@@ -29,9 +29,9 @@
     height: 32px;
 }
 
-.site-header--open .site-header__sitenav {
-    transform: translateX(0);
-}
+/* .site-header--open .site-header__sitenav {
+    transform: translateX(24px);
+} */
 
 .site-header__toggler {
     display: block;
