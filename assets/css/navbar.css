@@ -58,6 +58,10 @@
     opacity: 0.6;
 }
 
+.site-header--open .site-header__sitenav {
+    transform: translateX(24px);
+}
+
 @media only screen and (min-width: 768px) {
     .site-header__sitenav {
         margin-right: 0;
