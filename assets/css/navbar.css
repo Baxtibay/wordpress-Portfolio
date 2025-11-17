@@ -1,0 +1,123 @@
+/* NAVBAR */
+.site-header__sitenav {
+    transform: translateX(105%);
+    transition: transform 0.4s ease;
+    width: 95%;
+    height: 89vh;
+    padding: 40px;
+    margin-right: 20px;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 90px;
+    background-color: var(--grey-blue);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+.logo:active {
+    opacity: 0.6;
+}
+
+/* SITENAV */
+.sitenav__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.sitenav__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.sitenav__item--active .sitenav__link {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.sitenav__link {
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.sitenav__link:hover {
+    opacity: 0.8;
+}
+
+.sitenav__link:active {
+    opacity: 0.6;
+}
+
+@media only screen and (min-width: 768px) {
+    .site-header__sitenav {
+        margin-right: 0;
+        transform: translateX(0);
+        transform: translateY(calc(-120% - 90px));
+        width: 100%;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 20px;
+        height: auto;
+        z-index: -1;
+        background-color: #fff;
+        box-shadow: 0 16px 18px rgba(0, 0, 0, 0.06);
+    }
+
+    .site-header__sitenav .sitenav__link {
+        color: var(--grey-blue);
+    }
+
+    .site-header--open .site-header__sitenav {
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .site-header__sitenav {
+        position: static;
+        width: auto;
+        height: auto;
+        padding: 0;
+        background-color: transparent;
+        transform: none;
+        border-radius: 0;
+        z-index: auto;
+        box-shadow: none;
+    }
+
+    .sitenav__list {
+        display: flex;
+        align-items: center;
+    }
+
+    .sitenav__item.sitenav__item:not(:last-child) {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .site-header__toggler {
+        display: none;
+    }
+    .site-header__sitenav .site-header__cta-button {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1180px) {
+    .site-header {
+        padding-bottom: 54px;
+    }
+}

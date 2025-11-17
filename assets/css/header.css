@@ -1,0 +1,75 @@
+/* HEADER */
+.site-header {
+    padding-top: 32px;
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05)
+}
+
+.site-header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header__logo {
+    margin-right: auto;
+}
+
+/* LOGO */
+.logo {
+    display: block;
+    text-decoration: none;
+}
+
+.logo-img {
+    display: block;
+    width: 61px;
+    height: 32px;
+}
+
+.site-header--open .site-header__sitenav {
+    transform: translateX(0);
+}
+
+.site-header__toggler {
+    display: block;
+    width: 30px;
+    height: 20px;
+    border: 0;
+    background-color: transparent;
+    background-image: url('../media/images/logos/hamburger-menu.svg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.site-header--open .site-header__toggler {
+    background-image: url('../media/images/logos/close-icon.svg');
+}
+
+@media only screen and (max-width: 1024px) {
+    .site-header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        background-color: #fff;
+    }
+    .site-header__cta-button {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .site-header {
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+    .logo-img {
+        width: 50px;
+        height: 25px;
+    }
+}
