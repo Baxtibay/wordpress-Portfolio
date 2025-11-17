@@ -11,5 +11,6 @@ Version: 1.0
 @import url('./layout.css');
 @import url('./normalize.css');
 @import url('./variables.css');
-
+@import url('./navbar.css');
 @import url('./components/buttons.css');
+@import url('./language-dropdown.css');
