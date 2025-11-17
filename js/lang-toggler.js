@@ -9,21 +9,24 @@ document.querySelectorAll(".language-switcher__item").forEach(item => {
     item.addEventListener("click", () => {
 
         const lang = item.getAttribute("data-lang");
-        const flag = item.querySelector(".language-switcher__flag").src;
+        const flagClass = item.querySelector(".language-switcher__flag").classList.value;
         const text = item.querySelector(".language-switcher__label").innerText;
 
-        // Update
-        selected.setAttribute("data-lang", lang);
-        selected.querySelector(".language-switcher__flag").src = flag;
+        // Flagni almashtirish
+        const selectedFlag = selected.querySelector(".language-switcher__flag");
+        selectedFlag.className = flagClass;
+
+        // Labelni almashtirish
         selected.querySelector(".language-switcher__label").innerText = text;
 
-        dropdown.style.display = "none";
+        // lang atributini yangilash
+        selected.setAttribute("data-lang", lang);
 
-        console.log("Til tanlandi:", lang);
+        dropdown.style.display = "none";
     });
 });
 
-// Close when clicking outside
+// Dropdowndan tashqariga bosilganda yopish
 document.addEventListener("click", (e) => {
     if (!e.target.closest(".language-switcher")) {
         dropdown.style.display = "none";

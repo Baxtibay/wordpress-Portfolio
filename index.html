@@ -9,6 +9,10 @@
 
   <!-- stylesheets -->
   <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- FLAG ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 
 <body>
@@ -22,37 +26,33 @@
       
       <!-- LANGUAGE DROP DOWN start -->
       <div class="language-switcher site__language-switcher" id="langSwitcher">
-        
-        <div class="language-switcher__selected" id="selectedLang" data-lang="eng">
-          <img class="language-switcher__flag" src="./assets/media/images/eng.png" alt="Uzbek" />
-          <span class="language-switcher__label visually-hidden">English</span>
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#109CF1"><path d="M480-360 280-560h400L480-360Z"/></svg>
-        </div>
+    
+    <div class="language-switcher__selected" id="selectedLang" data-lang="en">
+        <span class="language-switcher__flag fi fi-us"></span>
+        <span class="language-switcher__label visually-hidden">English</span>
+        <i class="dropdown-icon fa-solid fa-caret-down"></i>
+    </div>
 
-        
-        <div class="language-switcher__dropdown" id="langDropdown">
-          
-          <div class="language-switcher__item" data-lang="uz">
-            <img class="language-switcher__flag" src="./assets/media/images/uz.png" alt="Uzbek" />
+    <div class="language-switcher__dropdown" id="langDropdown">
+        <div class="language-switcher__item" data-lang="uz">
+            <span class="language-switcher__flag fi fi-uz"></span>
             <span class="language-switcher__label visually-hidden">O‘zbekcha</span>
-          </div>
-          
-          <div class="language-switcher__item" data-lang="en">
-            <img class="language-switcher__flag" src="./assets/media/images/eng.png" alt="English" />
-            <span class="language-switcher__label visually-hidden">English</span>
-          </div>
-          
-          <div class="language-switcher__item" data-lang="ru">
-            <img class="language-switcher__flag" src="./assets/media/images/ru.png" alt="Russian" />
-            <span class="language-switcher__label visually-hidden">Русский</span>
-          </div>
-          
         </div>
-        
-      </div>
+
+        <div class="language-switcher__item" data-lang="en">
+            <span class="language-switcher__flag fi fi-us"></span>
+            <span class="language-switcher__label visually-hidden">English</span>
+        </div>
+
+        <div class="language-switcher__item" data-lang="ru">
+            <span class="language-switcher__flag fi fi-ru"></span>
+            <span class="language-switcher__label visually-hidden">Русский</span>
+        </div>
+    </div>
+
+</div>
+
       <!-- LANGUAGE DROP DOWN end -->
-
-
 
 
       <!-- SITENAV -->
