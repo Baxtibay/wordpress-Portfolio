@@ -7,6 +7,20 @@
   margin-right: auto;
 }
 
-.main-content {
+
+/* MAIN-CONTENT */
+main {
   flex-grow: 1;
+}
+
+@media only screen and (max-width: 1024px) {
+  main {
+    margin-top: 104px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    margin-top: 85px;
+  }
 }

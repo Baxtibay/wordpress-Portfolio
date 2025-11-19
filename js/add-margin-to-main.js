@@ -1,8 +1,4 @@
-const modifiers = {
-    elMainContent: 'main-content'
-}
-
-const elSiteHeader = document.querySelector('.site-header');
+// const elSiteHeader = document.querySelector('.site-header');
 const elMainContent = document.querySelector('.main-content');
 
 
