@@ -29,24 +29,20 @@
     height: 32px;
 }
 
-/* .site-header--open .site-header__sitenav {
-    transform: translateX(24px);
-} */
-
 .site-header__toggler {
     display: block;
     width: 30px;
     height: 20px;
     border: 0;
     background-color: transparent;
-    background-image: url('../media/images/logos/hamburger-menu.svg');
+    background-image: url('../images/logos/hamburger-menu.svg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .site-header--open .site-header__toggler {
-    background-image: url('../media/images/logos/close-icon.svg');
+    background-image: url('../images/logos/close-icon.svg');
 }
 
 @media only screen and (max-width: 1024px) {
