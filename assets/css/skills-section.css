@@ -1,0 +1,167 @@
+.skills {
+    margin-bottom: 60px;
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.skills__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e1e1e;
+}
+
+.skills__subtitle {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 1rem;
+    color: #6b7280;
+}
+
+/* Element: group */
+.skills__group {
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.skills__group-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+}
+
+/* Element: grid */
+.skills__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Element: card */
+.skills__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9fafb;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.skills__icon--wrapper {
+    margin-right: 30px;
+}
+
+
+/* Element: icon */
+.skills__icon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skills__icon--svg {
+    width: 50px;
+    height: auto;
+}
+
+/* Element: name */
+.skills__name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e1e1e;
+    margin: 0;
+}
+
+/* Element: desc */
+.skills__desc {
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+.skills__icon--html {
+    color: #E96228;
+}
+
+.skills__icon--css {
+    color: #2EA5D6;
+}
+
+.skills__icon--js {
+    color: #e6e64d;
+}
+
+.skills__icon--scss {
+    color: #CC6699;
+}
+
+.skills__icon--bootstrap {
+    color: #681da8; 
+}
+
+.skills__icon--wordpress {
+    color: #7e7e7e;
+}
+
+.skills__icon--domain {
+    color: #848484;
+}
+
+.skills__icon--hosting {
+    color: #18c6b2;
+}
+
+.skills__icon--git {
+    color: #E94D32;
+}
+
+
+/* NO CODE SECTION START  */
+.nocode-title {
+    text-align: start;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.nocode-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 2px solid #3f9cfb;
+    color: #3f9cfb;
+    background: #f4f9ff;
+    transition: 0.25s ease;
+    user-select: none;
+}
+/* NO CODE SECTION END  */
+
+@media only screen and (max-width: 820px) {
+    .skills__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .skills__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
