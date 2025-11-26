@@ -11,6 +11,14 @@
 /* MAIN-CONTENT */
 main {
   flex-grow: 1;
+  padding-top: var(--space-desktop-padding);
+}
+
+/* Laptop */
+@media (max-width: 1199px) {
+  main {
+    padding-top: var(--space-laptop-padding);
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -19,8 +27,17 @@ main {
   }
 }
 
+/* Tablet */
+@media (max-width: 991px) {
+  main {
+    padding-top: var(--space-tablet-padding);
+  }
+}
+
+/* Mobile */
 @media only screen and (max-width: 768px) {
   main {
     margin-top: 85px;
+    padding-top: var(--space-mobile-padding);
   }
 }

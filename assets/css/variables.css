@@ -19,4 +19,10 @@
   --space-laptop: 80px;
   --space-tablet: 64px;
   --space-mobile: 48px;
+
+  /* SECTIN-SPACE-PADDING */
+  --space-desktop-padding: 80px;
+  --space-laptop-padding: 72px;
+  --space-tablet-padding: 56px;
+  --space-mobile-padding: 40px;
 }
