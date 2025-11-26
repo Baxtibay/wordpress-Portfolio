@@ -1,0 +1,100 @@
+.carousel-section {
+    margin-bottom: var(--space-desktop);
+}
+
+.carousel-wrapper {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 16/9; 
+}
+
+
+/* TRACK */
+.carousel-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.45s ease;
+}
+
+/* SLIDE */
+.slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* CAPTION */
+.caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* PAGINATION */
+.pagination {
+    position: relative;
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pageline {
+    width: 30px;
+    height: 4px;
+    background: #9fd9ff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pageline.active {
+    background: #33b7ff;
+}
+
+
+/* LAPTOP */
+@media (max-width: 1199px) {
+    .carousel-section {
+        margin-bottom: var(--space-laptop);
+    }
+}
+
+
+/* TABLET */
+@media (max-width: 991px) {
+    .carousel-section {
+        margin-bottom: var(--space-tablet);
+    }
+}
+
+@media (min-width: 1024px) {
+    .carousel-wrapper {
+        height: 500px;
+        aspect-ratio: unset;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 767px) {
+    .carousel-section {
+        margin-bottom: var(--space-mobile);
+    }
+    .caption {
+        font-size: 18px;
+    }
+}
