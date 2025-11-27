@@ -1,0 +1,166 @@
+/* === HERO SECTION === */
+.hero {
+    margin-bottom: var(--space-desktop);
+    background: #ffffff;
+    font-family: sans-serif;
+}
+
+.hero__container {
+    /* max-width: 1200px; */
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    /* padding: 0 20px; */
+}
+
+/* === LEFT TEXT CONTENT === */
+.hero__content {
+    flex: 1;
+}
+
+.hero__welcome {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #4f4f4f;
+    font-size: 20px;
+}
+
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero__title--highlight {
+    color: var(--primary-color);
+}
+
+.hero__subtitle {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.hero__description {
+    color: #6b6b6b;
+    max-width: 420px;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* === BUTTONS === */
+.hero__buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.hero__btn {
+    padding: 12px 28px;
+    border-radius: 25px;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.hero__btn--primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.hero__btn--primary:hover {
+    background: #2487e9;
+}
+
+
+/* === RIGHT IMAGE AREA === */
+.hero__image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero__image-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero__image {
+    width: 400px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* Laptop */
+@media (max-width: 1199px) {
+  .hero {
+    margin-bottom: var(--space-laptop);
+  }
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+    .hero {
+        margin-bottom: var(--space-tablet);
+    }
+    .hero__container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    .hero__description {
+        margin: 0 auto 30px;
+    }
+    
+    .hero__buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero {
+        margin-bottom: var(--space-mobile);
+    }
+  .hero__image {
+    width: 350px;
+  }  
+  .hero__title {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 530px) {
+  .hero__image {
+    width: 250px;
+  }  
+  .hero__welcome {
+    font-size: 18px;
+  }
+  .hero__title {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+  .hero__subtitle {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .hero__description {
+    margin-bottom: 12px;
+  }
+
+  .hero__btn {
+    width: 100%;
+    padding: 4px 28px;
+    font-size: 13px;
+  }
+
+}
