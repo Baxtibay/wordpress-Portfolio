@@ -1,0 +1,74 @@
+/* PAGINATION */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 0;
+    margin-bottom: var(--space-desktop);
+    font-family: sans-serif;
+}
+
+/* LEFT-RIGHT BUTTONS */
+.pagination-btn {
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.pagination-btn:hover {
+    background: #f2f2f2;
+}
+
+/* LIST STYLE */
+.pagination-list {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+}
+
+/* PAGE NUMBERS */
+.pagination-item {
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pagination-item:hover {
+    background: #f2f2f2;
+}
+
+/* ACTIVE PAGE */
+.pagination-item.active {
+    background: #1976ff;
+    color: #fff;
+    border-color: #1976ff;
+}
+
+/* Laptop */
+@media (max-width: 1199px) {
+    .pagination {
+        margin-bottom: var(--space-laptop);
+    }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .pagination {
+        margin-bottom: var(--space-tablet);
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .pagination {
+        margin-bottom: var(--space-mobile);
+    }
+}

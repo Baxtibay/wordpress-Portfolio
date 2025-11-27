@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    
+    <!-- FLAG ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css"/>
+    
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    
+    <!-- SITE-HEADER -->
+    <header class="site-header">
+        <div class="site-header__container container">
+            <a class="site-header__logo logo" href="index.html">
+                <img class="logo-img" src="./assets/images/logos/site-logo-blue.svg" alt="Site logo" width="61" height="32">
+            </a>
+            
+            
+            <!-- LANGUAGE DROP DOWN start -->
+            <div class="language-switcher site__language-switcher" id="langSwitcher">
+                
+                <div class="language-switcher__selected" id="selectedLang" data-lang="en">
+                    <span class="language-switcher__flag fi fi-us"></span>
+                    <span class="language-switcher__label visually-hidden">English</span>
+                    <i class="dropdown-icon fa-solid fa-caret-down"></i>
+                </div>
+                
+                <div class="language-switcher__dropdown" id="langDropdown">
+                    
+                    <div class="language-switcher__item" data-lang="uz">
+                        <span class="language-switcher__flag fi fi-uz"></span>
+                        <span class="language-switcher__label visually-hidden">O‘zbekcha</span>
+                    </div>
+                    
+                    <div class="language-switcher__item" data-lang="en">
+                        <span class="language-switcher__flag fi fi-us"></span>
+                        <span class="language-switcher__label visually-hidden">English</span>
+                    </div>
+                    
+                    <div class="language-switcher__item" data-lang="ru">
+                        <span class="language-switcher__flag fi fi-ru"></span>
+                        <span class="language-switcher__label visually-hidden">Русский</span>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            <!-- LANGUAGE DROP DOWN end -->
+            
+            
+            <!-- SITENAV -->
+            <nav class="site-header__sitenav sitenav">
+                <ul class="sitenav__list">
+                    <li class="sitenav__item sitenav__item--active"><a class="sitenav__link" href="index.html">Home</a></li>
+                    <li class="sitenav__item"><a class="sitenav__link" href="#">Portfolio</a></li>
+                    <li class="sitenav__item"><a class="sitenav__link" href="#">Contact me</a></li>
+                    <li class="sitenav__item"><a class="sitenav__link site-header__cta-button" href="#">Hire me</a></li>
+                </ul>
+            </nav>
+            
+            <a class="site-header__cta-button" href="#">Hire me</a>
+            <button class="site-header__toggler" type="button"></button>
+        </div>
+    </header>
+    
+    <main class="main-content">
+        <div class="main-content__container container">
+            <!-- FILTERS -->
+            <form class="filters" action="">
+                <div class="filters__select-wrap fa-select">
+                    <select class="filters__select">
+                        <option selected>All projects</option>
+                        <option>HTML Template</option>
+                        <option>Wordpress</option>
+                        <option>Tilda</option>
+                    </select>
+                </div>
+                
+                <div class="filters__input-wrap fa-input">
+                    <input class="filters__search-input" type="search" placeholder="Search">
+                </div>
+            </form>
+            
+            <!-- PROJECTS -->
+            <section class="projects">
+                <ul class="projects__list">
+                    
+                    <!-- CARD ITEM (one example repeated) -->
+                    <li class="projects__item">
+                        <div class="project__card">
+                            <img class="project__card-img" src="https://picsum.photos/264/169" alt="">
+                            <div class="project_card-info">
+                                <span class="project__category">HTML template</span>
+                                <h3 class="project__card-name">Akademnashr</h3>
+                                <dl class="project__card--details">
+                                    <div class="project__card--details__item">
+                                        <dt class="project__card--details__title">Tech:</dt>
+                                        <dd class="project__card--details-value">Html css js</dd>
+                                    </div>
+                                    <ul class="project__card--link__list">
+                                        <li class="project__card--link__item"><a class="project__card--link" href="#">Github</a></li>
+                                        <li class="project__card--link__item"><a class="project__card--link" href="#">Deploy</a></li>
+                                        <li class="project__card--link__item"><a class="project__card--link" href="#">More info</a></li>
+                                    </ul>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="projects__item">
+                        <div class="project__card">
+                            <img class="project__card-img" src="https://picsum.photos/264/169" alt="">
+                            <div class="project_card-info">
+                                <span class="project__category">HTML template</span>
+                                <h3 class="project__card-name">Akademnashr</h3>
+                                <dl class="project__card--details">
+                                    <div class="project__card--details__item">
+                                        <dt class="project__card--details__title">Tech:</dt>
+                                        <dd class="project__card--details-value">Html css js</dd>
+                                    </div>
+                                    <ul class="project__card--link__list">
+                                        <li class="project__card--link__item"><a class="project__card--link" href="#">Github</a></li>
+                                        <li class="project__card--link__item"><a class="project__card--link" href="#">Deploy</a></li>
+                                        <li class="project__card--link__item"><a class="project__card--link" href="#">More info</a></li>
+                                    </ul>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="projects__item">
+                        <div class="project__card">
+                            <img class="project__card-img" src="https://picsum.photos/264/169" alt="">
+                            <div class="project_card-info">
+                                <span class="project__category">HTML template</span>
+                                <h3 class="project__card-name">Akademnashr</h3>
+                                <dl class="project__card--details">
+                                    <div class="project__card--details__item">
+                                        <dt class="project__card--details__title">Tech:</dt>
+                                        <dd class="project__card--details-value">Html css js</dd>
+                                    </div>
+                                    <ul class="project__card--link__list">
+                                        <li class="project__card--link__item"><a class="project__card--link" href="#">Github</a></li>
+                                        <li class="project__card--link__item"><a class="project__card--link" href="#">Deploy</a></li>
+                                        <li class="project__card--link__item"><a class="project__card--link" href="#">More info</a></li>
+                                    </ul>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="projects__item">
+                        <div class="project__card">
+                            <img class="project__card-img" src="https://picsum.photos/264/169" alt="">
+                            <div class="project_card-info">
+                                <span class="project__category">HTML template</span>
+                                <h3 class="project__card-name">Akademnashr</h3>
+                                <dl class="project__card--details">
+                                    <div class="project__card--details__item">
+                                        <dt class="project__card--details__title">Tech:</dt>
+                                        <dd class="project__card--details-value">Html css js</dd>
+                                    </div>
+                                    <ul class="project__card--link__list">
+                                        <li class="project__card--link__item"><a class="project__card--link" href="#">Github</a></li>
+                                        <li class="project__card--link__item"><a class="project__card--link" href="#">Deploy</a></li>
+                                        <li class="project__card--link__item"><a class="project__card--link" href="#">More info</a></li>
+                                    </ul>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="projects__item">
+                        <div class="project__card">
+                            <img class="project__card-img" src="https://picsum.photos/264/169" alt="">
+                            <div class="project_card-info">
+                                <span class="project__category">HTML template</span>
+                                <h3 class="project__card-name">Akademnashr</h3>
+                                <dl class="project__card--details">
+                                    <div class="project__card--details__item">
+                                        <dt class="project__card--details__title">Tech:</dt>
+                                        <dd class="project__card--details-value">Html css js</dd>
+                                    </div>
+                                    <ul class="project__card--link__list">
+                                        <li class="project__card--link__item"><a class="project__card--link" href="#">Github</a></li>
+                                        <li class="project__card--link__item"><a class="project__card--link" href="#">Deploy</a></li>
+                                        <li class="project__card--link__item"><a class="project__card--link" href="#">More info</a></li>
+                                    </ul>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </section>
+            
+            <!-- PAGINATION START -->
+            <div class="pagination">
+                <button class="pagination-btn prev">‹</button>
+                <ul class="pagination-list">
+                    <li class="pagination-item active">1</li>
+                    <li class="pagination-item">2</li>
+                    <li class="pagination-item">3</li>
+                    <li class="pagination-item">...</li>
+                    <li class="pagination-item">10</li>
+                </ul>
+                <button class="pagination-btn next">›</button>
+            </div>
+            <!-- PAGINATION END -->
+        </div>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="site-footer__container container">
+            <a class="site-footer__logo logo" href="index.html">
+                <img class="logo-img" src="./assets/images/logos/site-logo-white.svg" alt="Site logo" width="61" height="32">
+            </a>
+            
+            <!-- SITENAV -->
+            <div class="site-footer__sitenav sitenav">
+                <ul class="sitenav__list">
+                    <li class="sitenav__item"><a class="sitenav__link" href="#">© Copyright 2025 | Designed and coded by Baxtibay</a></li>
+                </ul>
+            </div>
+            
+            <!-- SOCIALS -->
+            <div class="socials">
+                <ul class="socials__list">
+                    <li class="socials__item">
+                        <a class="socials__link" href="#" target="_black" aria-label="GitHub profile">
+                            <i class=" socials-icon fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="#" target="_black" aria-label="Instagram profile">
+                            <i class=" socials-icon fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="#" target="_black" aria-label="Telegram profile">
+                            <i class=" socials-icon fa-brands fa-telegram fa-ls"></i>
+                        </a>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    <script src="js/menu-toggler.js"></script>
+    <script src="js/lang-toggler.js"></script>
+</body>
+
+</html>
