@@ -22,6 +22,10 @@
     font-size: 13px;
 }
 
+.sitenav__copyright-text {
+    color: #fff;
+}
+
 
 /* SOCIALS */
 .socials__list {
@@ -40,7 +44,11 @@
     display: block;
     color: #fff;
     text-decoration: none;
-    
+    transition: color .2s ease;
+}
+
+.socials__link:hover {
+    color: var(--primary-color);
 }
 
 .socials-icon {
@@ -55,23 +63,23 @@
         padding-top: 24px;
         padding-bottom: 24px;
     }
-
+    
     .site-footer__container {
         flex-direction: row;
         justify-content: center;
     }
-
+    
     .site-footer__logo {
         margin-right: 48px;
         margin-bottom: 0;
     }
-
+    
     .site-footer__sitenav {
         margin-bottom: 0;
         margin-right: 48px;
         flex-grow: 1;
     }
-
+    
     .site-footer__sitenav .sitenav__link  {
         font-size: 12px;
     }
