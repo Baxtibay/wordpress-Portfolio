@@ -150,6 +150,12 @@
     justify-content: center;
 }
 
+@media (max-width: 1199px) {
+    .portfolio {
+        margin-bottom: var(--space-laptop);
+    }
+}
+
 
 /* ------------ DESKTOP 4 cards ------------ */
 @media (min-width: 1025px) {
@@ -173,6 +179,20 @@
     .portfolio-card {
         min-width: calc((100% - 24px) / 2.1);
     }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .portfolio {
+    margin-bottom: var(--space-tablet);
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .portfolio {
+    margin-bottom: var(--space-mobile);
+  }
 }
 
 /* ------------ MOBILE (1.1 card) ------------ */
