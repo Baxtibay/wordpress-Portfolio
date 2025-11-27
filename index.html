@@ -6,59 +6,59 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-
+  
   <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
+  
   <!-- FLAG ICONS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css"/>
-
+  
   <!-- stylesheets -->
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
- 
+  
   <!-- SITE-HEADER -->
   <header class="site-header">
     <div class="site-header__container container">
       <a class="site-header__logo logo" href="index.html">
         <img class="logo-img" src="./assets/images/logos/site-logo-blue.svg" alt="Site logo" width="61" height="32">
       </a>
-
-
+      
+      
       <!-- LANGUAGE DROP DOWN start -->
       <div class="language-switcher site__language-switcher" id="langSwitcher">
-    
+        
         <div class="language-switcher__selected" id="selectedLang" data-lang="en">
           <span class="language-switcher__flag fi fi-us"></span>
           <span class="language-switcher__label visually-hidden">English</span>
           <i class="dropdown-icon fa-solid fa-caret-down"></i>
         </div>
-
+        
         <div class="language-switcher__dropdown" id="langDropdown">
-
+          
           <div class="language-switcher__item" data-lang="uz">
             <span class="language-switcher__flag fi fi-uz"></span>
             <span class="language-switcher__label visually-hidden">O‘zbekcha</span>
           </div>
-
+          
           <div class="language-switcher__item" data-lang="en">
             <span class="language-switcher__flag fi fi-us"></span>
             <span class="language-switcher__label visually-hidden">English</span>
           </div>
-
+          
           <div class="language-switcher__item" data-lang="ru">
             <span class="language-switcher__flag fi fi-ru"></span>
             <span class="language-switcher__label visually-hidden">Русский</span>
           </div>
-
+          
         </div>
-
+        
       </div>
-
+      
       <!-- LANGUAGE DROP DOWN end -->
-
+      
       
       <!-- SITENAV -->
       <nav class="site-header__sitenav sitenav">
@@ -69,7 +69,7 @@
           <li class="sitenav__item"><a class="sitenav__link site-header__cta-button" href="#">Hire me</a></li>
         </ul>
       </nav>
-
+      
       <a class="site-header__cta-button" href="#">Hire me</a>
       <button class="site-header__toggler" type="button"></button>
     </div>
@@ -77,33 +77,33 @@
   
   <main class="main-content">
     <div class="main-content__container container">
-
-    <!-- CAROUSEL-SECTION START -->
-     <section class="carousel-section">
+      
+      <!-- CAROUSEL-SECTION START -->
+      <section class="carousel-section">
         <h2 class="visually-hidden">Carousel-section</h2>
-       <div class="carousel-wrapper" id="carousel">
-         
-         <div class="carousel-track" id="track">
-           <div class="slide">
-            <img src="./assets/images/landing-page.png">
-            <div class="caption">Responsive</div>
+        <div class="carousel-wrapper" id="carousel">
+          
+          <div class="carousel-track" id="track">
+            <div class="slide">
+              <img src="./assets/images/landing-page.png">
+              <div class="caption">Responsive</div>
+            </div>
+            <div class="slide">
+              <img src="./assets/images/ecommerce.png">
+              <div class="caption">E - Commerce</div>
+            </div>
+            <div class="slide">
+              <img src="./assets/images/education.png">
+              <div class="caption">Online Education</div>
+            </div>
           </div>
-           <div class="slide">
-            <img src="./assets/images/ecommerce.png">
-            <div class="caption">E - Commerce</div>
-          </div>
-           <div class="slide">
-            <img src="./assets/images/education.png">
-            <div class="caption">Online Education</div>
-          </div>
-         </div>
-         
-       </div>
-   
-       <div class="pagination" id="pagination"></div>
-     </section>
+          
+        </div>
+        
+        <div class="pagination" id="pagination"></div>
+      </section>
       <!-- CAROUSEL-SECTION END -->
-
+      
       <!-- INTRO-SECTION START -->
       <section class="intro intro--highlight" aria-labelledby="intro-title">
         <h2 class="visually-hidden">Intro section</h2>
@@ -129,7 +129,7 @@
         </div>
       </section>
       <!-- INTRO-SECTION end -->
-
+      
       <!-- SKILLS SECTION START -->
       <section class="skills">
         <h2 class="skills__title">My Skills</h2>
@@ -266,23 +266,112 @@
         </div>
       </section>
       <!-- SKILLS SECTION END -->
+      
+      <!-- SAMPLE PORTFOLIO SECTION START -->
+      <section class="portfolio">
+        <div class="portfolio__header">
+          <h2 class="portfolio__title">Sample projects</h2>
+          <a class="portfolio__more" href="#">More →</a>
+        </div>
+        
+        <div class="portfolio__wrapper">
+          
+          <div class="portfolio__carousel">
+            
+            <article class="portfolio-card">
+              <img src="https://picsum.photos/200" class="portfolio-card__image">
+              <span class="portfolio-card__badge">HTML template</span>
+              <h3 class="portfolio-card__title">Akademnashr</h3>
+              <div class="portfolio-card__tech-wrapper">
+                <h4 class="portfolio-card__tech-heading">Tech:</h4>
+                <span class="portfolio-card__tech-text">Html css js</span>
+              </div>
+              <div class="portfolio-card__links">
+                <a class="portfolio-card__link" href="#">Github</a>
+                <a class="portfolio-card__link" href="#">Deploy</a>
+                <a class="portfolio-card__link" href="#">More info</a>
+              </div>
+            </article>
 
+            <article class="portfolio-card">
+              <img src="https://picsum.photos/200" class="portfolio-card__image">
+              <span class="portfolio-card__badge">HTML template</span>
+              <h3 class="portfolio-card__title">Akademnashr</h3>
+              <div class="portfolio-card__tech-wrapper">
+                <h4 class="portfolio-card__tech-heading">Tech:</h4>
+                <span class="portfolio-card__tech-text">Html css js</span>
+              </div>
+              <div class="portfolio-card__links">
+                <a class="portfolio-card__link" href="#">Github</a>
+                <a class="portfolio-card__link" href="#">Deploy</a>
+                <a class="portfolio-card__link" href="#">More info</a>
+              </div>
+            </article>
+
+            <article class="portfolio-card">
+              <img src="https://picsum.photos/200" class="portfolio-card__image">
+              <span class="portfolio-card__badge">HTML template</span>
+              <h3 class="portfolio-card__title">Akademnashr</h3>
+              <div class="portfolio-card__tech-wrapper">
+                <h4 class="portfolio-card__tech-heading">Tech:</h4>
+                <span class="portfolio-card__tech-text">Html css js</span>
+              </div>
+              <div class="portfolio-card__links">
+                <a class="portfolio-card__link" href="#">Github</a>
+                <a class="portfolio-card__link" href="#">Deploy</a>
+                <a class="portfolio-card__link" href="#">More info</a>
+              </div>
+            </article>
+
+            <article class="portfolio-card">
+              <img src="https://picsum.photos/200" class="portfolio-card__image">
+              <span class="portfolio-card__badge">HTML template</span>
+              <h3 class="portfolio-card__title">Akademnashr</h3>
+              <div class="portfolio-card__tech-wrapper">
+                <h4 class="portfolio-card__tech-heading">Tech:</h4>
+                <span class="portfolio-card__tech-text">Html css js</span>
+              </div>
+              <div class="portfolio-card__links">
+                <a class="portfolio-card__link" href="#">Github</a>
+                <a class="portfolio-card__link" href="#">Deploy</a>
+                <a class="portfolio-card__link" href="#">More info</a>
+              </div>
+            </article>
+
+          </div>
+          
+          <div class="portfolio__controls">
+            <button class="portfolio__nav portfolio__nav--prev">
+              <div class="portfolio__nav--button-wrapper">
+                <i class="fa-solid fa-angle-left"></i>
+              </div>
+            </button>
+            <button class="portfolio__nav portfolio__nav--next">
+              <div class="portfolio__nav--button-wrapper">
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+          
+        </div>
+      </section>
+      <!-- SAMPLE PORTFOLIO SECTION END -->
     </div>
   </main>
-
+  
   <footer class="site-footer">
     <div class="site-footer__container container">
       <a class="site-footer__logo logo" href="index.html">
         <img class="logo-img" src="./assets/images/logos/site-logo-white.svg" alt="Site logo" width="61" height="32">
       </a>
-
+      
       <!-- SITENAV -->
       <div class="site-footer__sitenav sitenav">
         <ul class="sitenav__list">
           <li class="sitenav__item"><a class="sitenav__link" href="#">© Copyright 2025 | Designed and coded by Baxtibay</a></li>
         </ul>
       </div>
-
+      
       <!-- SOCIALS -->
       <div class="socials">
         <ul class="socials__list">
@@ -300,15 +389,16 @@
             <a class="socials__link" href="#" target="_black" aria-label="Telegram profile">
               <i class=" socials-icon fa-brands fa-telegram fa-ls"></i>
             </a>
-        </ul>
+          </ul>
+        </div>
+        
       </div>
-
-    </div>
     </div>
   </footer>
   <script src="js/menu-toggler.js"></script>
   <script src="js/lang-toggler.js"></script>
   <script src="js/carousel.js"></script>
+  <script src="js/sample-project.js"></script>
 </body>
 
 </html>

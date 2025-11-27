@@ -3,8 +3,8 @@ const slides = document.querySelectorAll(".slide");
 const pagination = document.getElementById("pagination");
 
 let index = 1;
-let isDragging = false;
-let startX = 0;
+let isDraggingCarousel = false;
+let dragStartX = 0;
 let currentX = 0;
 
 
@@ -52,7 +52,7 @@ function goToSlide(i) {
 }
 
 
-/* TRANSITION END — LOOP FIX */
+/* TRANSITION END — LOOP */
 track.addEventListener('transitionend', () => {
     if (allSlides[index] === firstClone) {
         track.style.transition = "none";
