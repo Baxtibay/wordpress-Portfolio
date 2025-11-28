@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    
+    <!-- FLAG ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css"/>
+    
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    
+    <!-- SITE-HEADER -->
+    <header class="site-header">
+        <div class="site-header__container container">
+            <a class="site-header__logo logo" href="index.html">
+                <img class="logo-img" src="./assets/images/logos/site-logo-blue.svg" alt="Site logo" width="61" height="32">
+            </a>
+            
+            
+            <!-- LANGUAGE DROP DOWN start -->
+            <div class="language-switcher site__language-switcher" id="langSwitcher">
+                
+                <div class="language-switcher__selected" id="selectedLang" data-lang="en">
+                    <span class="language-switcher__flag fi fi-us"></span>
+                    <span class="language-switcher__label visually-hidden">English</span>
+                    <i class="dropdown-icon fa-solid fa-caret-down"></i>
+                </div>
+                
+                <div class="language-switcher__dropdown" id="langDropdown">
+                    
+                    <div class="language-switcher__item" data-lang="uz">
+                        <span class="language-switcher__flag fi fi-uz"></span>
+                        <span class="language-switcher__label visually-hidden">O‘zbekcha</span>
+                    </div>
+                    
+                    <div class="language-switcher__item" data-lang="en">
+                        <span class="language-switcher__flag fi fi-us"></span>
+                        <span class="language-switcher__label visually-hidden">English</span>
+                    </div>
+                    
+                    <div class="language-switcher__item" data-lang="ru">
+                        <span class="language-switcher__flag fi fi-ru"></span>
+                        <span class="language-switcher__label visually-hidden">Русский</span>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            <!-- LANGUAGE DROP DOWN end -->
+            
+            
+            <!-- SITENAV -->
+            <nav class="site-header__sitenav sitenav">
+                <ul class="sitenav__list">
+                    <li class="sitenav__item sitenav__item--active"><a class="sitenav__link" href="#">Home</a></li>
+                    <li class="sitenav__item"><a class="sitenav__link" href="./portfolio.html">Portfolio</a></li>
+                    <li class="sitenav__item"><a class="sitenav__link" href="#">Contact me</a></li>
+                    <li class="sitenav__item"><a class="sitenav__link site-header__cta-button" href="#">Hire me</a></li>
+                </ul>
+            </nav>
+            
+            <a class="site-header__cta-button" href="#">Hire me</a>
+            <button class="site-header__toggler" type="button"></button>
+        </div>
+    </header>
+    
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- GET IN TOUCH -->
+            <section class="two-column-section">
+                <h2 class="two-column-section__heading">Get in Touch</h2>
+                
+                <div class="two-column-section__content">
+                    <p class="two-column-section__text">
+                        I'd love to hear about what you're working on and how I could help. I'm a hard working and positive person who will always approach each task with a sense of purpose and attention to detail. Please do feel free to check out my online profiles below and get in touch using the form.
+                    </p>
+                    
+                    <!-- SOCIALS -->
+                    <div class="socials socials--dark">
+                        <ul class="socials__list">
+                            <li class="socials__item">
+                                <a class="socials__link" href="#" target="_blank" aria-label="GitHub profile">
+                                    <i class="socials-icon fa-brands fa-github"></i>
+                                </a>
+                            </li>
+                            
+                            <li class="socials__item">
+                                <a class="socials__link" href="#" target="_blank" aria-label="Instagram profile">
+                                    <i class="socials-icon fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            
+                            <li class="socials__item">
+                                <a class="socials__link" href="#" target="_blank" aria-label="Telegram profile">
+                                    <i class="socials-icon fa-brands fa-telegram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div> 
+            </section>
+            
+            
+            <!-- CONTACT FORM -->
+            <section class="two-column-section">
+                <h2 class="two-column-section__heading">Contact me</h2>
+                
+                <div class="two-column-section__content">
+                    
+                    <form class="form" action="" method="post">
+                        
+                        <div class="form__group">
+                            <label class="form__label" for="name-input">Name</label>
+                            <input class="form__field" type="text" name="name" id="name-input" placeholder="John Doe" required>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label class="form__label" for="email-input">Email</label>
+                            <input class="form__field" type="email" name="email" id="email-input" placeholder="email@example.com" required>
+                            <div class="form__error-message">Please enter valid email.</div>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label class="form__label" for="message-field">Message</label>
+                            <textarea class="form__field form__label--textarea" name="message" id="message-field" placeholder="How can I help?" required></textarea>
+                        </div>
+                        
+                        <div class="form__group">
+                            <button class="solid-button" type="submit">Send message</button>
+                        </div>
+                        
+                    </form>
+                    <span>You can also contact me directly on <a class="two-column-section__link" href="#" target="_blank">telegram</a>, If you get any error with emailing</span>
+                </div> <!-- /.two-column-section__content -->
+            </section>
+            
+        </div> <!-- /.container -->
+    </main>
+    
+    
+    <footer class="site-footer">
+        <div class="site-footer__container container">
+            <a class="site-footer__logo logo" href="index.html">
+                <img class="logo-img" src="./assets/images/logos/site-logo-white.svg" alt="Site logo" width="61" height="32">
+            </a>
+            
+            <!-- SITENAV -->
+            <div class="site-footer__sitenav sitenav">
+                <ul class="sitenav__list">
+                    <li class="sitenav__item">
+                        <span class="sitenav__copyright-text">
+                            © Copyright 2025 | Designed and coded by Baxtibay
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- SOCIALS -->
+            <div class="socials">
+                <ul class="socials__list">
+                    <li class="socials__item">
+                        <a class="socials__link" href="#" target="_black" aria-label="GitHub profile">
+                            <i class=" socials-icon fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="#" target="_black" aria-label="Instagram profile">
+                            <i class=" socials-icon fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="#" target="_black" aria-label="Telegram profile">
+                            <i class=" socials-icon fa-brands fa-telegram fa-ls"></i>
+                        </a>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    <script src="js/menu-toggler.js"></script>
+    <script src="js/lang-toggler.js"></script>
+</body>
+
+</html>

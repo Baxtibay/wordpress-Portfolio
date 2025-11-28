@@ -1,0 +1,109 @@
+/* TWO-COLUMN-SECTION */
+.two-column-section {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 125px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.two-column-section:last-child {
+    border-top: 1px solid rgba(51, 50, 61, 0.15);
+}
+
+.two-column-section__heading {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357px;
+}
+
+.two-column-section__content {
+    display: grid;
+    gap: 24px;
+}
+
+.two-column-section__text {
+    margin: 0;
+    font-size: 22px;
+}
+
+.two-column-section__link {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+
+/* FORM */
+.form {
+    display: grid;
+    gap: 24px;
+}
+
+.form__label {
+    align-self: flex-start;
+    margin-bottom: 8px;
+    color: var(--grey-blue);
+    font-weight: 700;
+    line-height: 30px;
+    opacity: 0.8;
+}
+
+.form__field {
+    display: block;
+    width: 100%;
+    border: 1px solid transparent;
+    padding: 9px 16px;
+    background-color: rgba(51, 50, 61, 0.1);
+    font-size: 13px;
+    line-height: 30px;
+    outline: none;
+}
+
+.form__label--textarea {
+    min-height: 96px;
+    resize: vertical;
+}
+
+/* FORM INVALID & INVALID STYLE  */
+.form__field:not(:focus):not(:placeholder-shown):valid {
+    border-color: green;
+}
+
+.form__field:not(:focus):not(:placeholder-shown):invalid {
+    border-color: red;
+}
+
+.form__error-message {
+    display: none;
+    margin-top: 4px;
+    font-size: 0.625rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--red);
+}
+
+.form__field:not(:focus):not(:placeholder-shown):invalid ~ .form__error-message {
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    .two-column-section {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .two-column-section__heading {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 500px) {
+    .two-column-section {
+        padding-top: 24px;
+        padding-bottom: 32px;
+    }
+}

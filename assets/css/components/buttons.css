@@ -1,3 +1,4 @@
+/* CTA BUTTON */
 .site-header__cta-button {
     padding: 6px 20px;
     text-decoration: none;
@@ -10,4 +11,35 @@
 .site-header__cta-button:hover {
     background-color: var(--primary-color);
     color: #fff;
+}
+
+
+/* SOLID BUTTON */
+.solid-button {
+    padding: 16px 24px;
+    display: inline-block;
+    border: 0;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--dark-blue);
+}
+
+.solid-button:hover {
+    opacity: 0.8;
+}
+
+.solid-button:active {
+    opacity: 0.6;
+}
+
+@media (max-width: 500px) {
+    .solid-button {
+        width: 100%;
+    }
 }
