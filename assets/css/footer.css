@@ -36,19 +36,33 @@
     list-style: none;
 }
 
+.socials--dark .socials__list {
+    margin-bottom: 20px;
+}
+
 .socials__item:not(:last-child) {
     margin-right: 16px;
 }
 
 .socials__link {
-    display: block;
+    display: flex;
     color: #fff;
     text-decoration: none;
     transition: color .2s ease;
 }
 
-.socials__link:hover {
+.socials__link:hover,
+.socials--dark .socials__link:hover {
     color: var(--primary-color);
+}
+
+.socials--dark .socials__link {
+    color: var(--grey-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 28px;
 }
 
 .socials-icon {
