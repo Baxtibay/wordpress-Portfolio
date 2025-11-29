@@ -133,3 +133,53 @@ select:-webkit-autofill:focus {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* UNDERLINE LINK ANIMATION ------------ START ------------- */
+.link {
+  position: relative;
+  padding-bottom: 3px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color .3s ease;
+}
+
+/* UNIVERSAL ::after (FOR UNDERLINE) */
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: #0D74FF; /* underline color*/
+  transition: all .3s ease;
+}
+
+/* 
+  1) FROM THE CENTER TO BOTH SIDES UNDERLINE
+  link--center-line
+*/
+
+.link--center-line::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.link--center-line:hover::after {
+  width: 100%;
+}
+
+
+/* 
+  2) LEFT TO RIGHT UNDERLINE
+  link--left-line
+*/
+
+.link--left-line::after {
+  left: 0;
+}
+
+.link--left-line:hover::after {
+  width: 100%;
+}
+/* UNDERLINE LINK ANIMATION ------------ END ------------- */

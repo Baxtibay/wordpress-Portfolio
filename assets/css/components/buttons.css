@@ -39,7 +39,30 @@
 }
 
 @media (max-width: 500px) {
-    .solid-button {
+    .solid-button--full-width {
         width: 100%;
     }
 }
+
+
+/* PROJECT BUTTON START*/
+.project__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;             
+  margin-bottom: 20px;
+  color: #fff;            
+  font-size: 15px;
+  text-decoration: none;
+  transition: .2s ease;
+}
+
+.project__button i {
+  font-size: 15px;
+  transition: .2s ease;
+}
+
+.project__button:hover i {
+  transform: translateX(-3px);
+}
+/* PROJECT BUTTON end*/
