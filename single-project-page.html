@@ -15,6 +15,7 @@
     
     <!-- stylesheets -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/sample-project.css">
 </head>
 
 <body>
@@ -65,7 +66,7 @@
                 <ul class="sitenav__list">
                     <li class="sitenav__item sitenav__item--active"><a class="sitenav__link" href="./index.html">Home</a></li>
                     <li class="sitenav__item"><a class="sitenav__link" href="./portfolio.html">Portfolio</a></li>
-                    <li class="sitenav__item"><a class="sitenav__link" href="#">Contact me</a></li>
+                    <li class="sitenav__item"><a class="sitenav__link" href="./contact.html">Contact me</a></li>
                     <li class="sitenav__item"><a class="sitenav__link site-header__cta-button" href="#">Hire me</a></li>
                 </ul>
             </nav>
@@ -78,74 +79,66 @@
     <main class="main-content">
         <div class="container">
             
-            <!-- GET IN TOUCH -->
-            <section class="two-column-section">
-                <h2 class="two-column-section__heading">Get in Touch</h2>
+            <section class="single-project project">
                 
-                <div class="two-column-section__content">
-                    <p class="two-column-section__text">
-                        I'd love to hear about what you're working on and how I could help. I'm a hard working and positive person who will always approach each task with a sense of purpose and attention to detail. Please do feel free to check out my online profiles below and get in touch using the form.
-                    </p>
+                <a class="project__button solid-button" href="./portfolio.html">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back to projects
+                </a>
+                
+                <div class="project__header">
+                    <h1 class="project__title">Akademnashr</h1>
+                    <div class="project__tag">HTML template</div>
+                </div>
+                
+                <div class="single-project__wrapper">
                     
-                    <!-- SOCIALS -->
-                    <div class="socials socials--dark">
-                        <ul class="socials__list">
-                            <li class="socials__item">
-                                <a class="socials__link" href="#" target="_blank" aria-label="GitHub profile">
-                                    <i class="socials-icon fa-brands fa-github"></i>
-                                </a>
-                            </li>
-                            
-                            <li class="socials__item">
-                                <a class="socials__link" href="#" target="_blank" aria-label="Instagram profile">
-                                    <i class="socials-icon fa-brands fa-instagram"></i>
-                                </a>
-                            </li>
-                            
-                            <li class="socials__item">
-                                <a class="socials__link" href="#" target="_blank" aria-label="Telegram profile">
-                                    <i class="socials-icon fa-brands fa-telegram"></i>
-                                </a>
-                            </li>
-                        </ul>
+                    <!-- Left image -->
+                    <div class="project__thumbnail">
+                        <img class="project__img" src="https://placehold.co/300" alt="Project thumbnail">
                     </div>
                     
-                </div> 
-            </section>
-            
-            
-            <!-- CONTACT FORM -->
-            <section class="two-column-section">
-                <h2 class="two-column-section__heading">Contact me</h2>
+                    <!-- Right text -->
+                    <div class="project__content">
+                        
+                        <div class="project__description">
+                            <h3 class="project__subtitle">Project description :
+                                <span class="project__text">
+                                    This project is a fully responsive landing page developed using HTML, CSS, and JavaScript. The code structures are based on the BEM methodology.
+                                </span>
+                            </h3>
+                        </div>
+                        
+                        
+                        <h2 class="project__subtitle">Tech stack</h2>
+                        <ul class="project__list">
+                            <li class="project__item">HTML5</li>
+                            <li class="project__item">CSS3 (BEM)</li>
+                            <li class="project__item">JavaScript</li>
+                            <li class="project__item">Responsive layout</li>
+                        </ul>
+                        
+                        <h2 class="project__subtitle">Project links</h2>
+                        <div class="project__links">
+                            <a class="project__link-gray link link--left-line" href="#" target="_blank">
+                                <i class="project__icon fa-brands fa-github"></i> Github
+                            </a>
+                            
+                            <a class="project__link-gray  link link--left-line" href="#" target="_blank">
+                                <i class="project__icon fa-solid fa-globe"></i> Live demo
+                            </a>
+                            
+                            <a class="project__link-gray  link link--left-line" href="#" target="_blank">
+                                <i class="project__icon fa-brands fa-figma"></i> Figma
+                            </a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
                 
-                <div class="two-column-section__content">
-                    
-                    <form class="form" action="" method="post">
-                        
-                        <div class="form__group">
-                            <label class="form__label" for="name-input">Name</label>
-                            <input class="form__field" type="text" name="name" id="name-input" placeholder="John Doe" required>
-                        </div>
-                        
-                        <div class="form__group">
-                            <label class="form__label" for="email-input">Email</label>
-                            <input class="form__field" type="email" name="email" id="email-input" placeholder="email@example.com" required>
-                            <div class="form__error-message">Please enter valid email.</div>
-                        </div>
-                        
-                        <div class="form__group">
-                            <label class="form__label" for="message-field">Message</label>
-                            <textarea class="form__field form__label--textarea" name="message" id="message-field" placeholder="How can I help?" required></textarea>
-                        </div>
-                        
-                        <div class="form__group">
-                            <button class="solid-button solid-button--full-width" type="submit">Send message</button>
-                        </div>
-                        
-                    </form>
-                    <span>You can also contact me directly on <a class="two-column-section__link" href="#" target="_blank">telegram</a>, If you get any error with emailing</span>
-                </div> <!-- /.two-column-section__content -->
             </section>
+            
             
         </div> <!-- /.container -->
     </main>

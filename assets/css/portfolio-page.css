@@ -12,98 +12,100 @@
     list-style: none;
 }
 
-/* DEFAULT: DESKTOP ( ≥ 1366px ) → 4-column */
 .projects__item {
     width: 100%;
 }
 
-
-
 /* PROJECT CARD */
-.project__card {
+.project-card {
     background-color: #fff;
-    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
 }
 
-.project__card-img {
+.project-card__img {
     width: 100%;
     display: block;
     border-radius: 4px;
 }
 
-.project_card-info {
-    padding-top: 10px;
+.project-card__info {
+    padding: 10px;
 }
 
-.project__category {
+.project-card__category {
     display: inline-flex;
     margin-bottom: 10px;
     padding: 4px 10px;
     background: rgba(69, 164, 251, 0.25);
     border-radius: 20px;
+    font-size: 12px;
+    color: var(--primary-color);
 }
 
-.project__card-name {
+.project-card__name {
     margin: 0 0 8px 0;
+    font-size: 16px;
 }
 
-.project__card--details__item {
+.project-card__details-item {
     display: flex;
     margin-bottom: 20px;
 }
 
-.project__card--details__title {
+.project-card__details-title {
     font-weight: bold;
-    margin-right: 20px;
+    margin-right: 8px;
+    font-size: 14px;
 }
 
-.project__card--details-value {
+.project-card__details-value {
     margin: 0;
     color: #636363;
+    font-size: 15px;
 }
 
 /* LINKS */
-.project__card--link__list {
+.project-card__links {
     display: flex;
-    gap: 20px;
+    gap: 14px;
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-.project__card--link {
+.project-card__link-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.project-card__icon {
+    font-size: 16px;
+    margin-right: 6px;
+    color: var(--primary-color);
+}
+
+.project-card__icon-font {
+    font-size: 20px;
+}
+
+.project-card__link {
     position: relative;
     color: #383838;
     text-decoration: none;
     transition: color 0.3s;
+    font-size: 14px;
 }
 
-.project__card--link::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -2px;
-    width: 0;
-    height: 1px;
-    color: #3F9CFB;
-    background: currentColor;
-    transition: all 0.3s ease;
-    transform: translateX(-50%);
-}
-
-.project__card--link:hover {
+.project-card__link:hover {
     color: #3F9CFB;
     opacity: 0.8;
 }
-.project__card--link:active {
+
+.project-card__link:active {
     opacity: 0.6;
 }
 
-.project__card--link:hover::after {
-    width: 100%;
-}
 
 /* LAPTOP ( ≤ 1366px ) → 3-column */
 @media (max-width: 1366px) {
@@ -124,6 +126,7 @@
     .main-content {
         justify-content: center;
     }
+    
     .filters {
         width: 100%;
         flex-direction: column;
