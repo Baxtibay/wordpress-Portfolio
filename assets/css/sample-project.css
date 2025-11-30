@@ -58,113 +58,6 @@
     transition: transform .35s ease;
 }
 
-/* CARD */
-.portfolio-card {
-    background: #fff;
-    border-radius: 8px;
-    border: 1px solid #e7e7e7;
-    min-width: 280px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
-}
-
-.portfolio-card__image {
-    margin-bottom: 10px;
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-.portfolio-card__info {
-    padding: 10px;
-}
-
-.portfolio-card__badge {
-    margin-top: 0;
-    margin-bottom: 6px;
-    display: inline-block;
-    padding: 4px 12px;
-    background: #e3f2ff;
-    color: var(--primary-color);
-    border-radius: 20px;
-    font-size: 13px;
-}
-
-.portfolio-card__title {
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: var(--grey-blue);
-    font-size: 16px;
-}
-
-.portfolio-card__tech-wrapper {
-    display: flex;
-    margin-bottom: 12px;
-    align-items: center;
-}
-
-.portfolio-card__tech-heading {
-    margin: 0;
-    margin-right: 4px;
-    font-size: 15px;
-}
-
-.portfolio-card__tech-text {
-    font-size: 14px;
-    color: #636363;
-}
-
-.portfolio-card__links {
-    display: flex;
-    gap: 14px;
-    font-size: 14px;
-}
-
-.portfolio-card__link-wrapper {
-    display: flex;
-    align-items: center;
-}
-
-.portfolio-card__icon {
-    font-size: 15px;
-    color: var(--primary-color);
-    margin-right: 4px;
-}
-
-.portfolio-card__icon-font {
-    font-size: 21px;
-}
-
-.portfolio-card__link {
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.3s ease;
-}
-
-.portfolio-card__link::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--primary-color);
-    transition: all 0.3s ease;
-    transform: translateX(-50%);
-}
-
-.portfolio-card__link:hover {
-    color: var(--primary-color);
-}
-
-.portfolio-card__link:hover::after {
-    width: 100%;
-    left: 0;
-    transform: translateX(0);
-}
-
 /* BOTTOM CONTROLS */
 .portfolio__controls {
     margin-top: 18px;
@@ -201,10 +94,6 @@
     .portfolio__carousel {
         transform: none !important;
     }
-    .portfolio-card {
-        width: calc((100% - 3 * 24px) / 4);
-        min-width: auto;
-    }
     .portfolio__controls {
         display: none;
     }
@@ -213,10 +102,7 @@
 /* ------------ TABLET (2.1 card) ------------ */
 @media (max-width: 1024px) and (min-width: 641px) {
     .portfolio__carousel {
-        gap: 4px;
-    }
-    .portfolio-card {
-        min-width: calc((100% - 24px) / 2.1);
+        gap: 8px;
     }
 }
 
@@ -239,9 +125,6 @@
     .portfolio__title,
     .portfolio__more {
         font-size: 20px;
-    }
-    .portfolio-card {
-        min-width: 85%;
     }
 }
 

@@ -1,5 +1,5 @@
 const portfolioCarousel = document.querySelector(".portfolio__carousel");
-const cards = document.querySelectorAll(".portfolio-card");
+const cards = document.querySelectorAll(".project-card");
 const nextBtn = document.querySelector(".portfolio__nav--next");
 const prevBtn = document.querySelector(".portfolio__nav--prev");
 
@@ -9,7 +9,10 @@ let maxIndex;
 
 /* UPDATE SIZES */
 function updateSizes() {
-    cardWidth = cards[0].offsetWidth + 24;
+    const style = getComputedStyle(portfolioCarousel);
+    const gap = parseFloat(style.columnGap || style.gap || 0);
+
+    cardWidth = cards[0].offsetWidth + gap;
 
     if (window.innerWidth > 1024) {
         maxIndex = 0;
@@ -19,6 +22,7 @@ function updateSizes() {
         maxIndex = cards.length - 1;
     }
 }
+
 updateSizes();
 window.addEventListener("resize", updateSizes);
 

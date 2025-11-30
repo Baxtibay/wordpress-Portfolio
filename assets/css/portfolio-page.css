@@ -113,11 +113,24 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
+/* CARD MODIFIER */
+@media (min-width: 1025px) {
+    .project-card--carousel {
+        width: calc((100% - 3 * 24px) / 4);
+        min-width: auto;
+    }
+}
 @media (max-width: 1024px) {
     .projects__list {
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ------------ TABLET (2.1 card) ------------ */
+@media (max-width: 1024px) and (min-width: 641px) {
+    .project-card--carousel {
+        min-width: calc((100% - 24px) / 2.1);
     }
 }
 
@@ -147,5 +160,9 @@
     }
 }
 
-
-
+/* ------------ MOBILE (1.1 card) ------------ */
+@media (max-width: 640px) {
+    .project-card--carousel {
+        min-width: 85%;
+    }
+}
