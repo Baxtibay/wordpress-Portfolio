@@ -134,6 +134,22 @@ select:-webkit-autofill:focus {
   overflow: hidden;
 }
 
+/* BLUR + SCROLL ---------- START ----------- */
+.body--locked {
+    overflow: hidden;
+}
+
+.main-blur {
+    transition: filter 0.3s ease;
+}
+
+.body--locked .main-blur {
+    filter: blur(4px);
+}
+
+/* BLUR + SCROLL ----------- END ----------- */
+
+
 /* UNDERLINE LINK ANIMATION ------------ START ------------- */
 .link {
   position: relative;
