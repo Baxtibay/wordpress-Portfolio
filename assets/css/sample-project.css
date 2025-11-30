@@ -61,7 +61,7 @@
 /* CARD */
 .portfolio-card {
     background: #fff;
-    border-radius: 14px;
+    border-radius: 8px;
     border: 1px solid #e7e7e7;
     min-width: 280px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
@@ -72,7 +72,7 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 4px;
 }
 
 .portfolio-card__info {
@@ -109,10 +109,30 @@
     font-size: 15px;
 }
 
+.portfolio-card__tech-text {
+    font-size: 14px;
+    color: #636363;
+}
+
 .portfolio-card__links {
     display: flex;
     gap: 14px;
     font-size: 14px;
+}
+
+.portfolio-card__link-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.portfolio-card__icon {
+    font-size: 15px;
+    color: var(--primary-color);
+    margin-right: 4px;
+}
+
+.portfolio-card__icon-font {
+    font-size: 21px;
 }
 
 .portfolio-card__link {
