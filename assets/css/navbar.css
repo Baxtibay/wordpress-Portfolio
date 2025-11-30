@@ -105,6 +105,7 @@
     .sitenav__list {
         display: flex;
         align-items: center;
+        margin-right: 8px;
     }
 
     .sitenav__item.sitenav__item:not(:last-child) {
