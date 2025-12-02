@@ -1,0 +1,140 @@
+.layout {
+    height: 100%;
+    display: flex;
+}
+
+/* ------------------ SIDEBAR ------------------ */
+
+.sidebar {
+    margin-top: 2px;
+    width: 240px;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    transition: width 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar--closed {
+    width: 60px;
+}
+
+.sidebar__menu {
+    padding-top: 20px;
+}
+
+.sidebar__toggle-icon {
+    display: block;
+    color: var(--primary-color);
+    margin-right: 8px;
+    font-size: 28px;
+}
+
+.sidebar__item {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 6px 20px;
+    text-decoration: none;
+    color: #3b3b3b;
+    transition: background 0.2s;
+}
+
+.sidebar__item--active,
+.sidebar__item:hover {
+    background-color: rgba(69, 164, 251, 0.25);;
+}
+
+.sidebar__icon {
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.sidebar__text {
+    white-space: nowrap;
+}
+
+/* When sidebar is closed hide text */
+.sidebar--closed .sidebar__text {
+    display: none;
+}
+
+.sidebar__toggle {
+    margin-left: auto;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* ------------------ MAIN CONTENT ------------------ */
+
+.main-content-admin {
+    padding: 20px;
+    width: calc(100% - 240px);
+    transition: margin-left 0.3s ease, width 0.3s ease;
+}
+
+.main-content-admin--expanded {
+    margin-left: 60px;
+    width: calc(100% - 60px);
+}
+
+/* ------------------ MOBILE ------------------ */
+
+@media (max-width: 768px) {
+    body {
+        overflow-y: hidden;
+    }
+    .layout {
+        position: relative;
+    }
+    .sidebar {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width:100%;
+        max-width: 260px;
+        height: 100vh;
+        transform: translateX(-100%);
+        background: #fff;
+        z-index: 1000;
+    }
+    
+    
+    .sidebar--open {
+        transform: translateX(0);
+    }
+    
+    .main-content-admin {
+        width: 100%;
+    }
+    
+    /* Overlay when sidebar is open */
+    /* .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 500;
+    } */
+    
+    .overlay--show {
+        display: block;
+    }
+    
+    /* Hide collapse/expand behavior on mobile */
+    .sidebar--closed {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 500px) {
+    .sidebar {
+        top: 6px;
+    }
+    
+    
+}
