@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  
+  <!-- FLAG ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css"/>
+  
+  <!-- GOOGLE FONTS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  
+  <!-- SITE-HEADER -->
+  <header class="site-header">
+    <div class="site-header__container container">
+      <a class="site-header__logo logo" href="index.html">
+        <img class="logo-img" src="./assets/images/logos/site-logo-blue.svg" alt="Site logo" width="61" height="32">
+      </a>
+      
+      <!-- SIDEBAR-TOGGLER  -->
+      <button class="sidebar__toggle" id="menuToggle">
+        <span class="sidebar__toggle-icon material-symbols-outlined">side_navigation</span>
+      </button>
+
+      <!-- LANGUAGE DROP DOWN start -->
+      <div class="language-switcher site__language-switcher" id="langSwitcher">
+        
+        <div class="language-switcher__selected" id="selectedLang" data-lang="en">
+          <span class="language-switcher__flag fi fi-us"></span>
+          <span class="language-switcher__label visually-hidden">English</span>
+          <i class="dropdown-icon fa-solid fa-caret-down"></i>
+        </div>
+        
+        <div class="language-switcher__dropdown" id="langDropdown">
+          
+          <div class="language-switcher__item" data-lang="uz">
+            <span class="language-switcher__flag fi fi-uz"></span>
+            <span class="language-switcher__label visually-hidden">O‘zbekcha</span>
+          </div>
+          
+          <div class="language-switcher__item" data-lang="en">
+            <span class="language-switcher__flag fi fi-us"></span>
+            <span class="language-switcher__label visually-hidden">English</span>
+          </div>
+          
+          <div class="language-switcher__item" data-lang="ru">
+            <span class="language-switcher__flag fi fi-ru"></span>
+            <span class="language-switcher__label visually-hidden">Русский</span>
+          </div>
+          
+        </div>
+        
+      </div>
+      
+      <!-- LANGUAGE DROP DOWN end -->
+      
+      
+      <!-- SITENAV -->
+      <nav class="site-header__sitenav sitenav">
+        <ul class="sitenav__list">
+          <li class="sitenav__item sitenav__item--active"><a class="sitenav__link" href="#">Home</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="./portfolio.html">Portfolio</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="./contact.html">Contact me</a></li>
+        </ul>
+      </nav>
+      
+      <div class="cta-button-wrapper">
+        <a class="site-header__cta-button" href="#">Hire me</a>
+      </div>
+      <button class="site-header__toggler" type="button">
+        <span class="site-header__toggler-icon material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </header>
+  
+  <main class="main-content main-blur main--no-top">
+    <div class="layout">
+      
+      <aside class="sidebar" id="sidebar">
+        <nav class="sidebar__menu">
+          <a href="#" class="sidebar__item sidebar__item--active">
+            <i class="sidebar__icon fa-solid fa-briefcase"></i>
+            <span class="sidebar__text">Projects</span>
+          </a>
+          <a href="#" class="sidebar__item">
+            <span class="sidebar__icon material-symbols-outlined">fact_check</span>
+            <span class="sidebar__text">Management</span>
+          </a>
+        </nav>
+      </aside>
+      
+      <!-- Overlay (mobile only) -->
+      <div class="overlay" id="overlay"></div>
+      
+      <div class="main-content-admin" id="mainContent">
+        <h1>Main Content Area</h1>
+        <p>This area expands when the sidebar is closed.</p>
+      </div>
+      
+    </div>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="site-footer__container container">
+      <a class="site-footer__logo logo" href="index.html">
+        <img class="logo-img" src="./assets/images/logos/site-logo-white.svg" alt="Site logo" width="61" height="32">
+      </a>
+      
+      <!-- SITENAV -->
+      <div class="site-footer__sitenav sitenav">
+        <ul class="sitenav__list">
+          <li class="sitenav__item">
+            <span class="sitenav__copyright-text">
+              © Copyright 2025 | Designed and coded by Baxtibay
+            </span>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- SOCIALS -->
+      <div class="socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__link" href="#" target="_black" aria-label="GitHub profile">
+              <i class=" socials-icon fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" target="_black" aria-label="Instagram profile">
+              <i class=" socials-icon fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" target="_black" aria-label="Telegram profile">
+              <i class=" socials-icon fa-brands fa-telegram fa-ls"></i>
+            </a>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+  <script src="js/menu-toggler.js"></script>
+  <script src="js/lang-toggler.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/sample-project.js"></script>
+  <script src="js/admin-page-toggler.js"></script>
+</body>
+
+</html>
