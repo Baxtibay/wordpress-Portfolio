@@ -82,9 +82,6 @@
 /* ------------------ MOBILE ------------------ */
 
 @media (max-width: 768px) {
-    body {
-        overflow-y: hidden;
-    }
     .layout {
         position: relative;
     }
